@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Nav(props) {
   const { categories = [], setCurrentCategory, currentCategory } = props;
@@ -14,13 +15,15 @@ function Nav(props) {
         <ul>
           {left.map((category) => (
             <li className={`${currentCategory.name === category.name && `navActive`}`} key = {category.name}>
-              <span
-                onClick={() => {
-                  setCurrentCategory(category)
-                }}
-              >
-                {category.name}
-              </span>
+              <Link to={category.url}>
+                <span
+                  onClick={() => {
+                    setCurrentCategory(category)
+                  }}
+                >
+                  {category.name}
+                </span>
+              </Link>
             </li>
           ))}
         </ul>
@@ -30,13 +33,15 @@ function Nav(props) {
         <ul>
         {right.map((category) => (
             <li className={`${currentCategory.name === category.name && `navActive`}`} key = {category.name}>
-              <span
-                onClick={() => {
-                  setCurrentCategory(category)
-                }}
-              >
-                {category.name}
-              </span>
+              <Link to={category.url}>
+                <span
+                  onClick={() => {
+                    setCurrentCategory(category)
+                  }}
+                >
+                  {category.name}
+                </span>
+              </Link>
             </li>
           ))}
         </ul>
