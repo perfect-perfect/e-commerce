@@ -7,27 +7,31 @@ function App() {
   const [categories] = useState([
     {
       name: 'MENSWEAR',
+      orientation: 'left'
     },
     {
-      name: 'WOMENSWEAR'
+      name: 'WOMENSWEAR',
+      orientation: 'left'
     },
     {
-      name: 'EVERYTHING ELSE'
+      name: 'EVERYTHING ELSE',
+      orientation: 'left'
     },
     {
-      name: 'SEARCH'
+      name: 'HOMEPAGE',
+      orientation: 'center'
     },
     {
-      name: 'ENGLISH'
+      name: 'ACCOUNT',
+      orientation: 'right'
     },
     {
-      name: 'ACCOUNT'
+      name: 'WISHLIST',
+      orientation: 'right'
     },
     {
-      name: 'WISHLIST'
-    },
-    {
-      name: 'SHOPPING BAG'
+      name: 'SHOPPING BAG',
+      orientation: 'right'
     }
   ])
 
