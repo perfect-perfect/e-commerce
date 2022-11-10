@@ -4,119 +4,117 @@ function Nav(props) {
   const { categories = [], setCurrentCategory, currentCategory } = props;
 
   return (
-    <div>
-      <header>
-        <nav className="nav">
-          <ul>
-            <li
-              className={`${
-                currentCategory.name === `MENSWEAR` && `navActive`
-              }`}
-              key={`MENSWEAR`}
+
+    <header>
+      <nav className="nav">
+        <ul>
+          <li
+            className={`${currentCategory.name === categories[0].name && `navActive`}`}
+            key={`MENSWEAR`}
+          >
+            <span
+              onClick={() => {
+                setCurrentCategory(categories[0]);
+              }}
             >
-              <span
-                onClick={() => {
-                  setCurrentCategory('MENSWEAR');
-                }}
-              >
-                MENSWEAR
-              </span>
-            </li>
-            <li
-              className={`${
-                currentCategory.name === `WOMENSWEAR` && `navActive`
-              }`}
-              key={`WOMENSWEAR`}
+              MENSWEAR
+            </span>
+          </li>
+          <li
+            className={`${
+              currentCategory.name === categories[1].name && `navActive`
+            }`}
+            key={`WOMENSWEAR`}
+          >
+            <span
+              onClick={() => {
+                setCurrentCategory(categories[1]);
+              }}
             >
-              <span
-                onClick={() => {
-                  setCurrentCategory('WOMENSWEAR');
-                }}
-              >
-                WOMENSWEAR
-              </span>
-            </li>
-            <li
-              className={`${
-                currentCategory.name === `EVERYTHING ELSE` && `navActive`
-              }`}
-              key={`EVERYTHING ELSE`}
+              WOMENSWEAR
+            </span>
+          </li>
+          <li
+            className={`${
+              currentCategory.name === categories[2].name && `navActive`
+            }`}
+            key={`EVERYTHING ELSE`}
+          >
+            <span
+              onClick={() => {
+                setCurrentCategory(categories[2]);
+              }}
             >
-              <span
-                onClick={() => {
-                  setCurrentCategory('EVERYTHING ELSE');
-                }}
-              >
-                EVERYTHING ELSE
-              </span>
-            </li>
-            <li
-              className={`${currentCategory.name === `SEARCH` && `navActive`}`}
-              key={`SEARCH`}
+              EVERYTHING ELSE
+            </span>
+          </li>
+          <li
+            className={`${currentCategory.name === `SEARCH` && `navActive`}`}
+            key={`SEARCH`}
+          >
+            SEARCH
+          </li>
+        </ul>
+        <div>
+          <h1>STORE</h1>
+        </div>
+        <ul>
+          <li
+            className={`${currentCategory.name === categories[4].name && `navActive`}`}
+            key={`ENGLISH`}
+          >
+            <span
+              onClick={() => {
+                setCurrentCategory(categories[4]);
+              }}
             >
-              SEARCH
-            </li>
-          </ul>
-          <div>
-            <h1>STORE</h1>
-          </div>
-          <ul>
-            <li
-              className={`${currentCategory.name === `ENGLISH` && `navActive`}`}
-              key={`ENGLISH`}
+              ENGLISH
+            </span>
+          </li>
+          <li
+            className={`${currentCategory.name === categories[5].name && `navActive`}`}
+            key={`ACCOUNT`}
+          >
+            <span
+              onClick={() => {
+                setCurrentCategory(categories[5]);
+              }}
             >
-              <span
-                onClick={() => {
-                  setCurrentCategory('ENGLISH');
-                }}
-              >
-                ENGLISH
-              </span>
-            </li>
-            <li
-              className={`${currentCategory.name === `ACCOUNT` && `navActive`}`}
-              key={`ACCOUNT`}
+              ACCOUNT
+            </span>
+          </li>
+          <li
+            className={`${
+              currentCategory.name === categories[6].name && `navActive`
+            }`}
+            key={`WISHLIST`}
+          >
+            <span
+              onClick={() => {
+                setCurrentCategory(categories[6]);
+              }}
             >
-              <span
-                onClick={() => {
-                  setCurrentCategory('ACCOUNT');
-                }}
-              >
-                ACCOUNT
-              </span>
-            </li>
-            <li
-              className={`${
-                currentCategory.name === `WISHLIST` && `navActive`
-              }`}
-              key={`WISHLIST`}
+              WISHLIST
+            </span>
+          </li>
+          <li
+            className={`${
+              currentCategory.name === categories[7].name && `navActive`
+            }`}
+            key={`SHOPPING BAG`}
+          >
+            <span
+              onClick={() => {
+                setCurrentCategory(categories[7]);
+              }}
             >
-              <span
-                onClick={() => {
-                  setCurrentCategory('WISHLIST');
-                }}
-              >
-                WISHLIST
-              </span>
-            </li>
-            <li
-              className={`${
-                currentCategory.name === `SHOPPING BAG` && `navActive`
-              }`}
-              key={`SHOPPING BAG`}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory('SHOPPING BAG');
-                }}
-              >
-                SHOPPING BAG
-              </span>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+              SHOPPING BAG
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
   );
 }
 
