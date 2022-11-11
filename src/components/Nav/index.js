@@ -2,26 +2,26 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 function Nav(props) {
-  const { categories = [], setCurrentCategory, currentCategory } = props;
+  const { pages = [], setCurrentPage, currentPage } = props;
 
-  const left = categories.filter((category) => category.orientation === 'left');
+  const left = pages.filter((page) => page.orientation === 'left');
 
-  const right = categories.filter((category) => category.orientation === 'right');
+  const right = pages.filter((page) => page.orientation === 'right');
 
   return (
 
     <header>
       <nav className="nav">
         <ul>
-          {left.map((category) => (
-            <li className={`${currentCategory.name === category.name && `navActive`}`} key = {category.name}>
-              <Link to={category.url}>
+          {left.map((page) => (
+            <li className={`${currentPage.name === page.name && `navActive`}`} key = {page.name}>
+              <Link to={page.url}>
                 <span
                   onClick={() => {
-                    setCurrentCategory(category)
+                    setCurrentPage(page)
                   }}
                 >
-                  {category.name}
+                  {page.name}
                 </span>
               </Link>
             </li>
@@ -31,15 +31,15 @@ function Nav(props) {
           <h1>STORE</h1>
         </div>
         <ul>
-        {right.map((category) => (
-            <li className={`${currentCategory.name === category.name && `navActive`}`} key = {category.name}>
-              <Link to={category.url}>
+          {right.map((page) => (
+            <li className={`${currentPage.name === page.name && `navActive`}`} key = {page.name}>
+              <Link to={page.url}>
                 <span
                   onClick={() => {
-                    setCurrentCategory(category)
+                    setCurrentPage(page)
                   }}
                 >
-                  {category.name}
+                  {page.name}
                 </span>
               </Link>
             </li>

@@ -1,18 +1,23 @@
 import { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
-import Home from './components/Home';
+import Home from './pages/Home';
 import { Routes, Route } from 'react-router-dom'
-import Men from './components/Men';
-import Women from './components/Women';
-import EverythingElse from './components/EverythingElse';
-import Account from './components/Account';
-import Wishlist from './components/Wishlist';
-import ShoppingBag from './components/ShoppingBag';
+import Men from './pages/Men';
+import Women from './pages/Women';
+import EverythingElse from './pages/EverythingElse';
+import Account from './pages/Account';
+import Wishlist from './pages/Wishlist';
+import ShoppingBag from './pages/ShoppingBag';
 
 function App() {
 
-  const [categories] = useState([
+  const [pages] = useState([
+    {
+      name: 'HOMEPAGE',
+      orientation: 'center',
+      url: '/'
+    },
     {
       name: 'MENSWEAR',
       orientation: 'left',
@@ -27,11 +32,6 @@ function App() {
       name: 'EVERYTHING ELSE',
       orientation: 'left',
       url: 'everything-else'
-    },
-    {
-      name: 'HOMEPAGE',
-      orientation: 'center',
-      url: '/'
     },
     {
       name: 'ACCOUNT',
@@ -50,14 +50,14 @@ function App() {
     }
   ])
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentPage, setCurrentPage] = useState(pages[0]);
   
   return (
     <div>
       <Nav 
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
+        pages={pages}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
       ></Nav>
       <main>
         <Routes>
