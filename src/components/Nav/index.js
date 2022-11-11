@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
+import { NavContainer } from './style'
+
 function Nav(props) {
   const { pages = [], setCurrentPage, currentPage } = props;
 
@@ -11,7 +13,7 @@ function Nav(props) {
   return (
 
     <header>
-      <nav className="nav">
+      <NavContainer>
         <ul>
           {left.map((page) => (
             <li className={`${currentPage.name === page.name && `navActive`}`} key = {page.name}>
@@ -45,7 +47,7 @@ function Nav(props) {
             </li>
           ))}
         </ul>
-      </nav>
+      </NavContainer>
     </header>
 
   );
