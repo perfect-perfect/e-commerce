@@ -1,18 +1,20 @@
 import React from 'react'
 import Filter from '../../components/Filter'
+import Gallery from '../../components/Gallery'
+import { MainWrapper } from './style'
 
 function Men() {
   return (
-    // Going to be made up 0f three components
+    
+    <MainWrapper>
+        {/* left component - categories/designers */}
+        <Filter></Filter>
 
-    // left component - categories/designers
-    <Filter></Filter>
+        {/* middle component - gallery */}
+        <Gallery></Gallery>
 
-    // middle component - gallery
-
-    // right component - sort
-
-
+        {/* right component - sort */}
+    </MainWrapper>
   )
 }
 
