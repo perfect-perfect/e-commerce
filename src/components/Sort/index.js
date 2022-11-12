@@ -7,7 +7,7 @@ function Sort() {
         <nav>
             <ul>
                 <li>
-                    <h2>Sort</h2>
+                    <h2>SORT</h2>
                 </li>
                 <li>
                     Lastest arrivals
@@ -23,7 +23,7 @@ function Sort() {
         <nav>
             <ul>
                 <li>
-                    <h2>Colors</h2>
+                    <h2>COLORS</h2>
                 </li>
                 <li>
                     <span>ALL COLORS</span>
