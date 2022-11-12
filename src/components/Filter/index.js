@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { FilterNav } from './style';
 
 function Filter() {
   return (
-    <nav>
+    <FilterNav>
       {/* Categories filter */}
       <ul>
         <li>
@@ -48,8 +49,7 @@ function Filter() {
           Henrik Vibskov
         </li>
       </ul>
-
-    </nav>
+    </FilterNav>
   )
 }
 

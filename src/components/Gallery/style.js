@@ -11,5 +11,6 @@ export const Card = styled.article`
 
 export const GalleryWrapper = styled.section`
 	display: flex;
+	padding: 0 55px;
 `
 

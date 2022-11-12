@@ -56,6 +56,23 @@ function Gallery() {
                 <span>$585</span>
             </div>
         </Card>
+        <Card> 
+            <div>
+                <img src={productImage1} alt='product'></img>
+            </div>
+            <div>
+                {/* brand */}
+                <span>GR10K</span>
+            </div>
+            <div>
+                {/* product name */}
+                <span>Black Aimless Sweater</span>
+            </div>
+            <div>
+                {/* price */}
+                <span>$585</span>
+            </div>
+        </Card>
     </GalleryWrapper>
 
   )

@@ -18,5 +18,6 @@ export const NavContainer = styled.nav`
   .navActive {
     text-decoration: underline;
   }
+
 `;
 
