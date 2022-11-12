@@ -2,5 +2,6 @@ import styled from "styled-components";
 
 export const MainWrapper = styled.div`
     display: flex;
-    width:100%;
+    padding: 0 55px;
+    margin-top: 35px
 `

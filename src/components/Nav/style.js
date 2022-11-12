@@ -4,6 +4,7 @@ export const NavContainer = styled.nav`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+  padding: 20px 55px;
 
   ul {
     display: flex;

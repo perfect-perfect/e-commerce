@@ -1,6 +1,7 @@
 import React from 'react'
 import Filter from '../../components/Filter'
 import Gallery from '../../components/Gallery'
+import Sort from '../../components/Sort'
 import { MainWrapper } from './style'
 
 function Men() {
@@ -14,6 +15,7 @@ function Men() {
         <Gallery></Gallery>
 
         {/* right component - sort */}
+        <Sort></Sort>
     </MainWrapper>
   )
 }

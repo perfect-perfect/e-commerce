@@ -1,4 +1,10 @@
 /* GLOBAL SETTINGS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -36,6 +42,11 @@ a:visited {
 h2 {
   font-size: 12px;
   font-weight: 450;
+  display: block;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* NAV STYLE BEGINS HERE */
