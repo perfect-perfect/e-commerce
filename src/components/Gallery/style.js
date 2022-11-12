@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Card = styled.article`
-	width: calc(17% - 20px);
+	width: calc(14% - 20px);
 
 	div img {
 		max-width: 100%;
